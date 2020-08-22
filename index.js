@@ -21,7 +21,7 @@ exports.handler = async (event) => {
     if (result.rows.length > 0) {    
       return {
         statusCode: 200,
-        body: JSON.stringify(result.rows),
+        body: result.rows
       };
     } else {
       return {
